@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Exercicio 03";
+}
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Consuma o webservice dos correios passando um CEP qualquer e mostre em tela o endereço que o mesmo retornar. ">Exercicio 03</h5>
+  
+        <div class="form-group col-md-6">
+            <label for="cepNumber">Digite o cep aqui</label>
+            <input onfocusout="buscarCep()" id="cepNumber" type="text" class="form-control" mask="99.999-999"/>            
+        </div> 
+
+        <div class="form-row">
+           <div class="form-group col-md-6">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro" readonly>
+           </div>
+
+           <div class="form-group col-md-6">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro" readonly>
+           </div>
+
+            <div class="form-group col-md-6">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" id="cidade" readonly>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="estado">Estado</label>                   
+                <input type="text" class="form-control" id="estado" readonly>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/Scripts/Exercicio03/Exercicio03.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>

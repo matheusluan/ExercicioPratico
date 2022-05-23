@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Exercicio 02";
+}
+<div class="card">
+    <div class="card-body" >
+    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Disponibilize uma opção de gravar os números visualizados em um arquivo txt.">Exercicio 02</h5>
+  
+    <div class="form-group">
+        <label for="inputEx01">Digite o números aqui</label>
+        <input id="inputEx01" type="number" class="form-control"/>
+        <small id="inputEx01Helper" class="form-text text-muted">
+            Digite o número e aperte enter. Quando quiser ordenar os números, aperte o botão verde.
+        </small>
+    </div> 
+
+    <div class="form-group" style="margin:15px 0">
+        <label for="textAreaEx01">Números desordenados</label>
+        <textarea id="textAreaEx01" class="form-control" readonly rows="3"></textarea>
+        
+    </div> 
+
+    <div class="form-group" style="margin:15px 0">
+        <label for="textAreaEx02">Números ordenados</label>
+        <textarea id="textAreaEx02" class="form-control" readonly rows="3"></textarea>
+    </div> 
+    <div class="form-group">
+        <div id="orderNumbers" style="margin:15px 0" class="btn btn-success">Ordenar números</div>
+        <a src="~/js/Scripts/Exercicio02/numbers.txt" download="numbers.txt" id="saveArchiveNumbers" style="margin:15px 0" class="btn btn-primary" >Salvar números em arquivo</a>
+    </div>
+    </div>
+  
+</div>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/Scripts/Exercicio02/Exercicio02.js"></script>
+<script src="~/js/FileSaver/dist/FileSaver.js"></script>
+<script src="~/js/FileSaver/src/FileSaver.js"></script>

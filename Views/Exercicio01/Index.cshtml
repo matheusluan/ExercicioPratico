@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Exercicio 01";
+}
+
+<div class="card">
+  <div class="card-body" >
+    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Desenvolver uma lógica que deverá permitir a inclusão de n números em qualquer sequência e em seguida exibi-los em ordem crescente.">Exercicio 01</h5>
+   
+    <div class="form-group">
+       <label for="inputEx01">Digite o números aqui</label>
+        <input id="inputEx01" type="number" class="form-control"/>
+        <small id="inputEx01Helper" class="form-text text-muted">
+          Digite o número e aperte enter. Quando quiser ordenar os números, aperte o botão verde.
+        </small>
+    </div> 
+
+    <div class="form-group" style="margin:15px 0">
+       <label for="textAreaEx01">Números desordenados</label>
+        <textarea id="textAreaEx01" class="form-control" readonly rows="3"></textarea>
+        
+    </div> 
+
+    <div class="form-group" style="margin:15px 0">
+       <label for="textAreaEx02">Números ordenados</label>
+        <textarea id="textAreaEx02" class="form-control" readonly rows="3"></textarea>
+    </div> 
+
+    <button id="orderNumbers" style="margin:15px 0" class="btn btn-success">Ordenar números</button>
+  </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/Scripts/Exercicio01/Exercicio01.js"></script>
