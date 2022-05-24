@@ -18,9 +18,26 @@ namespace ExercicioPratico.Controllers
             return View();
         }
 
-        public Boolean verificaNumber(int number)
+        [HttpGet]
+        public bool verificaNumber(int number)
         {
-            return true;
+            return (soma_divisores(number) == number ? true : false );
+        }
+
+        private int soma_divisores(int num)
+        {
+       
+            int soma = 0;
+
+            for (int i = 1; i<=num/2; i++)
+            {
+                if( (num%i) == 0)
+                {
+                    soma += i;
+                }
+            }
+
+            return soma;
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -3,13 +3,17 @@
 }
 <div class="card">
     <div class="card-body">
-        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Consuma o webservice dos correios passando um CEP qualquer e mostre em tela o endereço que o mesmo retornar. ">Exercicio 04</h5>
+        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Faça uma aplicação que verifique se um valor é perfeito ou não. Um valor é dito perfeito quando ele é igual a soma dos seus divisores, exceto ele próprio.">Exercicio 04</h5>
   
-        <div class="form-group col-md-6">
-            <label for="number">Digite o cep aqui</label>
-            <input onfocusout="verificaNumber()" id="number" type="text" class="form-control"/>            
-        </div> 
+        <div class="form-group col-md-6" style="margin:15px 0">
+            <label for="number">Digite o número para verificarmos se ele é perfeito.</label>
+            <input onfocusout="verificaNumber()" id="number" type="text" class="form-control"/>      
+        </div>
 
+        <div class="form-group col-md-6" style="margin:15px 0">
+             <div id="numeroPerfeito" style="margin:15px 0" class="alert alert-primary">                 
+             </div>
+        </div>
     </div>
 </div>
 

@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Exercicio 05";
+}
+<meta charset="utf-8" />
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Faça um programa que receba um número e usando laços de repetição calcule e mostre a tabuada desse número. ">Exercicio 05</h5>
+  
+        <div class="form-group col-md-6">
+            <label for="number">Digite um número aqui.</label>
+            <input onfocusout="tabuada()" id="number" type="text" class="form-control"/>            
+        </div> 
+       <div class="form-group hidden" style="margin:15px 0">
+           <label for="txtTab">Tábuada</label>
+           <textarea id="txtTab" class="form-control" readonly rows="10"></textarea>
+        
+       </div>
+    </div>
+</div>
+
+<script src="~/js/Scripts/Exercicio05/Exercicio05.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
